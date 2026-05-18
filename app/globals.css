@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f6f2e8;
+  font-family: Arial, "Microsoft YaHei", "PingFang SC", sans-serif;
+}
+
+.input {
+  min-height: 48px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgb(24 32 29 / 0.14);
+  background: white;
+  padding: 0.75rem;
+  color: #18201d;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #28725d;
+  box-shadow: 0 0 0 3px rgb(40 114 93 / 0.15);
+}
