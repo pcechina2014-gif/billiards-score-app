@@ -105,7 +105,7 @@ export default function RecordsPage() {
           <input type="number" placeholder="结束轮次" className="input" value={filters.roundTo ?? ""} onChange={(e) => setFilters({ ...filters, roundTo: e.target.value })} />
         </div>
         <div className="mt-2 grid grid-cols-2 gap-2">
-          <button onClick={load} className="flex h-12 items-center justify-center gap-2 rounded-lg bg-felt font-bold text-white">
+          <button onClick={() => load()} className="flex h-12 items-center justify-center gap-2 rounded-lg bg-felt font-bold text-white">
             <Search size={18} /> 查询
           </button>
           <button onClick={() => { setFilters({}); load({}); }} className="flex h-12 items-center justify-center gap-2 rounded-lg bg-ink/10 font-bold">
