@@ -77,3 +77,5 @@ NEXT_PUBLIC_PLAYER_B_EMAIL=he-lie@billiards.local
 - `updated_at`
 
 `weekday`、`winner`、`score_diff`、`updated_at` 在前端会计算一次，数据库触发器也会再次计算，防止手动写错。
+
+deploy retry
