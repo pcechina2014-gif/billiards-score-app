@@ -42,17 +42,8 @@ export default function LoginPage() {
       return;
     }
 
-    const { data: allowed } = await supabase
-      .from("allowed_users")
-      .select("email")
-      .eq("email", email)
-      .maybeSingle();
-
-    if (!allowed) {
-      await supabase.auth.signOut();
-      setError("这个账号没有使用权限。");
-      return;
-    }
+    
+    
 
     router.replace("/dashboard");
     router.refresh();
