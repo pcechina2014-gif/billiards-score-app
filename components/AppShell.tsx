@@ -27,8 +27,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   if (isLogin) return <>{children}</>;
 
   return (
-    <div className="min-h-screen bg-chalk pb-24 text-ink">
-      <header className="sticky top-0 z-20 border-b border-black/10 bg-chalk/95 backdrop-blur">
+    <div className="app-shell-background min-h-screen pb-24 text-ink">
+      <header className="sticky top-0 z-20 border-b border-black/10 bg-chalk/90 backdrop-blur">
         <div className="mx-auto flex max-w-md items-center justify-between px-4 py-3">
           <Link href="/dashboard" className="leading-tight">
             <p className="text-xs text-ink/60">台球对战</p>

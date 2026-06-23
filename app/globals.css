@@ -16,6 +16,15 @@ body {
   font-family: Arial, "Microsoft YaHei", "PingFang SC", sans-serif;
 }
 
+.app-shell-background {
+  background:
+    linear-gradient(180deg, rgb(246 242 232 / 0.9), rgb(246 242 232 / 0.82)),
+    url("/app-bg-billiards.png");
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: cover;
+}
+
 .input {
   min-height: 48px;
   width: 100%;
