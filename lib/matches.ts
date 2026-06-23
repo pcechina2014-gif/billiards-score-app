@@ -76,11 +76,13 @@ export function groupByTenRounds(records: MatchRecord[]) {
     const stats = computeStats(items);
     const scoreDiff = Math.abs(stats.aScore - stats.bScore);
     const leader = stats.aScore === stats.bScore ? "平局" : stats.aScore > stats.bScore ? PLAYER_A : PLAYER_B;
+    const roundScore = `${PLAYER_A} ${stats.aWins}:${stats.bWins} ${PLAYER_B}`;
     return {
       label: `第 ${start}-${start + 9} 轮`,
       items,
       stats,
       leader,
+      roundScore,
       scoreDiff
     };
   });

@@ -79,6 +79,7 @@ export default function StatsPage() {
               <div className="flex items-start justify-between gap-3">
                 <div>
                   <h4 className="text-base font-black">{group.label}</h4>
+                  <p className="mt-1 text-sm font-bold text-ink">{group.roundScore}</p>
                   <p className="mt-1 text-sm text-ink/55">共 {group.items.length} 轮</p>
                 </div>
                 <span className="rounded-full bg-felt px-3 py-1 text-sm font-bold text-white">
